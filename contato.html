@@ -1,14 +1,37 @@
-<link rel="stylesheet" href = "algum_arquivo.css">
-. . .
-<main>
-<form>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Grupo Phoenix</title>
+  <link rel="stylesheet" href="css/cadastro.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="titulo animacao-chamas">JUNTE-SE AO NOSSO GRUPO!</h1>
+    <nav>
+      <a href="index.html">Início</a>
+    </nav>
+  </header>
 
-<label for= "nome_cliente">Qual seu nome? </label>
-<input type= "text" id="nome_cliente">
-<label for="telefone_cliente">Telefone</label>
-<input type= "text" id= "telefone_cliente">
-<input type= "submit" value= "Enviar">
-</form>
-<form>
-</form>
-</main>
+  <main>
+    <form class="formulario fade-in">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensagem">Por que você quer se juntar?</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GRUPO PHOENIX.</p>
+  </footer>
+</body>
+</html>
